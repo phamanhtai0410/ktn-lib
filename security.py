@@ -55,9 +55,6 @@ class HTTPSecurity:
 
     def verify_token(self):
         try:
-            return {
-                '_id': '62f4bd107e5b9b4912b0690f'
-            }
             _token, _info = self.get_token()
 
             if not _token:
