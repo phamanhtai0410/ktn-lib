@@ -238,8 +238,8 @@ class DaoModel(Cache):
         for row in rows:
             row['created_time'] = dt_utcnow()
 
-            if 'created_time' not in row:
-                raise Exception('Required created_time')
+            if 'created_by' not in row:
+                raise Exception('Required created_by')
         if worker:
             self.worker(
                 func='insert_many',
