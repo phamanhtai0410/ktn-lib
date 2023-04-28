@@ -6,11 +6,29 @@
 """
 
 class Chains:
-    BSC = 'BSC'
+    ETHEREUM = 'ETHEREUM'
     AVAX = 'AVAX'
+    BSC = 'BSC'
     POLYGON = 'POLYGON'
     BOBA = 'BOBA'
-    ETHEREUM = 'ETHEREUM'
+    
+CHAINS_NAME = [
+    {
+        "name": "Ethereum",
+        "symbol":  "ETHEREUM"
+    },
+    {
+        "name": "Avalanche",
+        "symbol":  "AVAX"
+    },
+    {
+        "name": "Boba Network",
+        "symbol":  "BOBA"
+    },
+    {
+        "name": "Binance Smart Chain",
+        "symbol":  "BSC"
+    },
+]
 
-
-ListChainsSupport = [Chains.BSC, Chains.AVAX, Chains.BOBA, Chains.ETHEREUM]
+ListChainsSupport = [Chains.ETHEREUM, Chains.AVAX, Chains.BOBA, Chains.BSC]

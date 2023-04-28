@@ -12,4 +12,4 @@ from .schema import DatetimeField, ObjectIdField, IsObjectId, NotBlank
 from .security import HTTPSecurity
 from .exception import BadRequest, Forbidden, NotFound
 from .function import sync_task
-from .enum import Chains, ListChainsSupport
+from .enum import Chains, ListChainsSupport, CHAINS_NAME
