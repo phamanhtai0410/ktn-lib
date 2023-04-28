@@ -10,7 +10,7 @@ class Chains:
     AVAX = 'AVAX'
     POLYGON = 'POLYGON'
     BOBA = 'BOBA',
-    ETHER = 'ETHER'
+    ETHEREUM = 'ETHEREUM'
 
 
-ListChainsSupport = [Chains.BSC, Chains.AVAX, Chains.BOBA, Chains.ETHER]
+ListChainsSupport = [Chains.BSC, Chains.AVAX, Chains.BOBA, Chains.ETHEREUM]
