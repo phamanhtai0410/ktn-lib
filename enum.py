@@ -9,7 +9,7 @@ class Chains:
     BSC = 'BSC'
     AVAX = 'AVAX'
     POLYGON = 'POLYGON'
-    BOBA = 'BOBA',
+    BOBA = 'BOBA'
     ETHEREUM = 'ETHEREUM'
 
 
