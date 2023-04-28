@@ -15,19 +15,23 @@ class Chains:
 CHAINS_NAME = [
     {
         "name": "Ethereum",
-        "symbol":  "ETHEREUM"
+        "symbol":  "ETHEREUM",
+        "image_url": "https://static.katanainu.com/chain/ethereum.svg"
     },
     {
         "name": "Avalanche",
-        "symbol":  "AVAX"
+        "symbol":  "AVAX",
+        "image_url": "https://static.katanainu.com/chain/avax.svg"
     },
     {
         "name": "Boba Network",
-        "symbol":  "BOBA"
+        "symbol":  "BOBA",
+        "image_url": "https://static.katanainu.com/chain/boba.svg"
     },
     {
         "name": "Binance Smart Chain",
-        "symbol":  "BSC"
+        "symbol":  "BSC",
+        "image_url": "https://static.katanainu.com/chain/bsc.svg"
     },
 ]
 
