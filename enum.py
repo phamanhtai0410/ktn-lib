@@ -37,4 +37,4 @@ CHAINS_NAME = [
 
 ListChainsSupport = [Chains.ETHEREUM, Chains.AVAX, Chains.BOBA, Chains.BSC]
 
-NFT_AMOUNT_PUBLIC_MINT = 50
+NFT_AMOUNT_PUBLIC_MINT = 75
