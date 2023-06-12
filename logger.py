@@ -6,6 +6,7 @@
 """
 import logging
 import sys
+import sentry_sdk
 import traceback
 from inspect import getframeinfo, stack
 
@@ -35,3 +36,22 @@ def debug(msg, *args, **kwargs):
         logger.debug(_msg)
     except:
         traceback.print_exc()
+
+class LoggerTask(object):
+    
+    @classmethod
+    def debug(cls, msg, *args, **kwargs):
+        try:
+            caller = getframeinfo(stack()[1][0])
+            _msg = json_util.dumps({
+                'msg': msg,
+                'args': args,
+                'kwargs': kwargs,
+                'filename': caller.filename,
+                'lineno': caller.lineno
+            })
+            logger.debug(_msg, *args, **kwargs)
+
+        except:
+            traceback.print_exc()
+            sentry_sdk.capture_exception()

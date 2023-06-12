@@ -7,7 +7,7 @@
 from bson import ObjectId, json_util
 from celery import Celery
 from pydash import get
-
+from lib.logger import debug
 from .utils import dt_utcnow, is_oid
 
 
@@ -86,6 +86,7 @@ class Cache:
 
     def find_one_with_cache(self, filter, query):
         _key = self._key(filter)
+        debug('Cache key : ', _key)
         _item = self._get(_key)
         if _item is None and query:
             _item = query()
